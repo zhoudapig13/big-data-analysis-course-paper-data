@@ -40,7 +40,7 @@
 \maketitle
 \begingroup
 \renewcommand{\thefootnote}{}
-\footnotetext{数据集来自美国消费者金融保护局（Consumer Financial Protection Bureau, CFPB）公开的 \href{https://www.consumerfinance.gov/data-research/consumer-complaints/}{Consumer Complaint Database}。代码和实验数据已上传至 \href{https://github.com/zhoudapig13/big-data-analysis-course-paper-data}{GitHub 仓库：大数据分析课程论文数据}。}
+\footnotetext{数据集来自美国消费者金融保护局（Consumer Financial Protection Bureau, CFPB）公开的 \href{https://www.consumerfinance.gov/data-research/consumer-complaints/}{Consumer Complaint Database}。代码、实验数据和复现方式已上传至 \href{https://github.com/zhoudapig13/big-data-analysis-course-paper-data}{GitHub 仓库：大数据分析课程论文数据}。}
 \endgroup
 
 \begin{abstract}
@@ -297,5 +297,72 @@ Y_i^{(m)}=\tau_m(X_i)\Delta E_i+g_m(X_i)+\epsilon_i.
 
 \bibliographystyle{plain}
 \bibliography{references}
+
+\clearpage
+\appendix
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+\section{补充实验数据}
+
+本附录报告正文图表中未完全展开的实验数值。附表主要用于提高结果的可复核性，而不引入新的因果解释：附表 A1 给出两个响应预测任务的完整评估指标，附表 A2 展示主要主题的样本规模与响应率，附表 A3 补充主要产品类别的响应结果和文本表达统计。
+
+\begin{table}[H]
+  \centering
+  \scriptsize
+  \caption{响应预测模型的补充评估指标}
+  \label{tab:appendix-model-metrics}
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}{lrrrrrrrrrr}
+    \toprule
+    预测任务 & 训练集 & 测试集 & 测试正例率 & ROC-AUC & PR-AUC & F1 & Balanced acc. & Accuracy & Precision & Recall \\
+    \midrule
+    任意救济 & 22,697 & 7,566 & 25.9\% & 0.710 & 0.440 & 0.499 & 0.659 & 0.670 & 0.411 & 0.635 \\
+    及时回应 & 22,500 & 7,500 & 98.7\% & 0.771 & 0.995 & 0.960 & 0.615 & 0.923 & 0.991 & 0.931 \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \scriptsize
+  \caption{主要投诉主题的样本规模、关键词与响应率}
+  \label{tab:appendix-topic-response}
+  \begin{tabular}{llp{0.27\linewidth}rrrrr}
+    \toprule
+    主题 & 简要标签 & 代表关键词 & \(n\) & 占比 & 任意救济 & 金钱救济 & 非金钱救济 \\
+    \midrule
+    T2 & 身份盗用 & report, identity, theft, remove & 10,092 & 33.3\% & 30.9\% & 0.1\% & 30.8\% \\
+    T1 & 支付争议 & payment, bank, card, loan & 10,002 & 33.1\% & 21.7\% & 8.5\% & 13.2\% \\
+    T6 & 债务验证 & debt, collection, validation, proof & 5,396 & 17.8\% & 15.5\% & 0.2\% & 15.3\% \\
+    T0 & FCRA 法律模板 & section, rights, privacy & 1,640 & 5.4\% & 37.3\% & 0.1\% & 37.2\% \\
+    T3 & 征信机构 & reporting agency, furnish, privacy & 951 & 3.1\% & 44.3\% & 0.0\% & 44.3\% \\
+    T5 & 争议信函 & deleted, letter, response & 902 & 3.0\% & 23.4\% & 0.0\% & 23.4\% \\
+    T7 & 上传信件 & uploaded letters, review & 646 & 2.1\% & 34.1\% & 0.0\% & 34.1\% \\
+    T4 & 授权与伪证 & consent, perjury, authorization & 634 & 2.1\% & 36.0\% & 0.2\% & 35.8\% \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \scriptsize
+  \caption{主要产品类别的响应结果与文本表达统计}
+  \label{tab:appendix-product-response}
+  \resizebox{\linewidth}{!}{
+  \begin{tabular}{lrrrrrrr}
+    \toprule
+    产品类别 & \(n\) & 任意救济 & 金钱救济 & 非金钱救济 & 及时回应 & 平均词数 & 法律术语数 \\
+    \midrule
+    Credit reporting & 19,547 & 30.0\% & 0.2\% & 29.8\% & 99.6\% & 153.4 & 2.62 \\
+    Debt collection & 5,115 & 13.2\% & 0.9\% & 12.3\% & 95.5\% & 173.5 & 1.26 \\
+    Credit card/prepaid & 2,368 & 31.8\% & 18.9\% & 12.9\% & 99.1\% & 222.7 & 0.34 \\
+    Bank account & 1,858 & 22.0\% & 17.0\% & 5.1\% & 98.5\% & 233.5 & 0.19 \\
+    Student loan & 799 & 9.8\% & 2.0\% & 7.8\% & 98.0\% & 239.1 & 0.18 \\
+    Vehicle loan/lease & 515 & 9.7\% & 3.3\% & 6.4\% & 98.0\% & 230.0 & 0.67 \\
+    Mortgage & 38 & 5.3\% & 0.0\% & 5.3\% & 100.0\% & 285.2 & 0.58 \\
+    Money transfer & 12 & 16.7\% & 8.3\% & 8.3\% & -- & 190.3 & 0.92 \\
+    \bottomrule
+  \end{tabular}}
+\end{table}
 
 \end{document}
