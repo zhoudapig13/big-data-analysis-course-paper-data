@@ -21,7 +21,8 @@
 - `figures/`: 论文中使用的正式图表。
 - `llm_financial_complaints.tex`: 论文 LaTeX 源文件。
 - `references.bib`: 参考文献数据库。
-- `llm_financial_complaints.pdf`: 当前编译后的论文 PDF。
+- `llm_financial_complaints.pdf`: GitHub 网页预览友好的论文 PDF。
+- `llm_financial_complaints_text.pdf`: 可复制文字的论文 PDF。
 
 ## 复现方式
 
