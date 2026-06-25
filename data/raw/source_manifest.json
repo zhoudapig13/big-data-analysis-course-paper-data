@@ -1,0 +1,25 @@
+{
+  "mode": "hf",
+  "rows": 31000,
+  "combined_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\raw\\cfpb_combined_raw.csv",
+  "sources": [
+    {
+      "name": "hf_aciborowska_30k",
+      "url": "https://huggingface.co/datasets/aciborowska/customers-complaints/resolve/main/data/train-00000-of-00001-a5763026b6750ff3.parquet",
+      "format": "parquet",
+      "note": "30k CFPB-derived records with full original-style fields.",
+      "status": "downloaded",
+      "rows": 30000,
+      "local_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\raw\\hf_aciborowska_30k.csv"
+    },
+    {
+      "name": "hf_claritystorm_1k",
+      "url": "https://huggingface.co/datasets/claritystorm/cfpb-consumer-complaints/resolve/main/sample_1000.csv",
+      "format": "csv",
+      "note": "1k CFPB-derived records with clean CSV structure and 2023-2025 examples.",
+      "status": "downloaded",
+      "rows": 1000,
+      "local_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\raw\\hf_claritystorm_1k.csv"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "target": "timely_binary",
+  "status": "fit",
+  "n_train": 22500,
+  "n_test": 7500,
+  "positive_rate_train": 0.9875555555555555,
+  "positive_rate_test": 0.9874666666666667,
+  "accuracy": 0.9232,
+  "balanced_accuracy": 0.6145046282197872,
+  "f1": 0.9599109131403119,
+  "roc_auc": 0.7714920622152251,
+  "average_precision": 0.995467743543347,
+  "classification_report": {
+    "0": {
+      "precision": 0.05204460966542751,
+      "recall": 0.2978723404255319,
+      "f1-score": 0.08860759493670886,
+      "support": 94.0
+    },
+    "1": {
+      "precision": 0.9905199655271474,
+      "recall": 0.9311369160140427,
+      "f1-score": 0.9599109131403119,
+      "support": 7406.0
+    },
+    "accuracy": 0.9232,
+    "macro avg": {
+      "precision": 0.5212822875962875,
+      "recall": 0.6145046282197872,
+      "f1-score": 0.5242592540385104,
+      "support": 7500.0
+    },
+    "weighted avg": {
+      "precision": 0.9787577410670139,
+      "recall": 0.9232,
+      "f1-score": 0.9489905782188267,
+      "support": 7500.0
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "rows": 30263,
+  "columns": 53,
+  "date_min": "2015-03-20",
+  "date_max": "2026-02-02",
+  "unique_products": 17,
+  "unique_issues": 63,
+  "unique_companies": 1371,
+  "unique_states": 58,
+  "post_chatgpt_share": 0.28004493936490105,
+  "any_relief_rate": 0.25853352278359715,
+  "monetary_relief_rate": 0.02888015067904702,
+  "non_monetary_relief_rate": 0.2296533721045501,
+  "timely_response_rate": 0.9875333333333334,
+  "median_words": 113.0,
+  "mean_words": 170.90288471070284
+}

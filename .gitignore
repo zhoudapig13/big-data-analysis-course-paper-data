@@ -1,0 +1,37 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Local preview documents
+llm_financial_complaints_caption_preview.*
+llm_financial_complaints_section_preview.*
+
+# Preview renders and temporary figure variants
+outputs/preview/
+outputs/preview_*/
+outputs/pdf_preview/
+figures/*backup*.png
+figures/*preview*.png
+figures/algorithm_versions/
+figures/mechanism_versions/
+
+# Python/editor/cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

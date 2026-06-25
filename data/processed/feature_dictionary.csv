@@ -1,0 +1,15 @@
+variable,definition
+post_chatgpt,1 if date_received is on/after 2022-11-30.
+any_relief,1 for monetary or non-monetary relief responses.
+monetary_relief,1 for closed with monetary relief.
+non_monetary_relief,1 for closed with non-monetary relief.
+timely_binary,1 if CFPB marks company response as timely.
+n_words,Number of lexical tokens in the complaint narrative.
+avg_sentence_len,Average tokens per sentence.
+lexical_diversity,Unique token ratio.
+legal_term_count,Count of legal/regulatory cue terms.
+evidence_term_count,Count of evidence/document cue terms.
+urgency_term_count,Count of urgency cue terms.
+hardship_term_count,Count of hardship cue terms.
+template_phrase_count,Count of repeated legal/template phrases.
+product_group,Coarsened product category for modeling.

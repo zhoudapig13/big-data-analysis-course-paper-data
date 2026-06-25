@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "rows": 30263,
+    "columns": 53,
+    "date_min": "2015-03-20",
+    "date_max": "2026-02-02",
+    "unique_products": 17,
+    "unique_issues": 63,
+    "unique_companies": 1371,
+    "unique_states": 58,
+    "post_chatgpt_share": 0.28004493936490105,
+    "any_relief_rate": 0.25853352278359715,
+    "monetary_relief_rate": 0.02888015067904702,
+    "non_monetary_relief_rate": 0.2296533721045501,
+    "timely_response_rate": 0.9875333333333334,
+    "median_words": 113.0,
+    "mean_words": 170.90288471070284
+  },
+  "models": {
+    "any_relief": {
+      "target": "any_relief",
+      "status": "fit",
+      "n_train": 22697,
+      "n_test": 7566,
+      "positive_rate_train": 0.2585363704454333,
+      "positive_rate_test": 0.25852498017446474,
+      "accuracy": 0.6704996034892942,
+      "balanced_accuracy": 0.6589285128440667,
+      "f1": 0.49909584086799275,
+      "roc_auc": 0.7100520269457476,
+      "average_precision": 0.43968925810103443
+    },
+    "timely_binary": {
+      "target": "timely_binary",
+      "status": "fit",
+      "n_train": 22500,
+      "n_test": 7500,
+      "positive_rate_train": 0.9875555555555555,
+      "positive_rate_test": 0.9874666666666667,
+      "accuracy": 0.9232,
+      "balanced_accuracy": 0.6145046282197872,
+      "f1": 0.9599109131403119,
+      "roc_auc": 0.7714920622152251,
+      "average_precision": 0.995467743543347
+    }
+  },
+  "key_outputs": {
+    "dataset_profile": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\outputs\\tables\\dataset_profile.json",
+    "monthly_profile": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\outputs\\tables\\monthly_profile.csv",
+    "topic_keywords": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\outputs\\tables\\topic_keywords_nmf.csv",
+    "topic_response_rates": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\outputs\\tables\\topic_response_rates.csv",
+    "model_features_any_relief": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\outputs\\tables\\model_top_features_any_relief.csv"
+  }
+}

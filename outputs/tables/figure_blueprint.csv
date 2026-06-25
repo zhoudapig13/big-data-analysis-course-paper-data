@@ -1,0 +1,7 @@
+figure_id,draft_title,data_or_design
+Figure 1,Data pipeline mechanism,Raw complaints -> cleaning -> text features -> topics -> response models.
+Figure 2,Monthly complaint and relief trends,Line chart or small multiples using monthly_profile.csv.
+Figure 3,Product-risk heatmap,Product group by response outcome/rate from product_response_rates.csv.
+Figure 4,Topic mechanism map,Topic prevalence and response rates from topic_response_rates.csv.
+Figure 5,Model explanation,Top positive/negative logistic features or later SHAP values.
+Figure 6,Quasi-causal mechanism,"Post-ChatGPT proxy, complaint expression, and company response path."

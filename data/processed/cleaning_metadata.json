@@ -1,0 +1,11 @@
+{
+  "input_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\raw\\cfpb_combined_raw.csv",
+  "raw_rows": 31000,
+  "deduplicated_rows": 30992,
+  "modeling_rows": 30263,
+  "date_min": "2015-03-20",
+  "date_max": "2026-02-02",
+  "clean_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\processed\\cfpb_clean_features.csv",
+  "modeling_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\processed\\cfpb_modeling_dataset.csv",
+  "feature_dictionary_path": "C:\\Users\\26435\\Documents\\\u6570\u7406\u7edf\u8ba1\u4e0e\u62bd\u6837\u8c03\u67e5\u8bba\u6587\\cfpb_financial_complaints\\data\\processed\\feature_dictionary.csv"
+}
